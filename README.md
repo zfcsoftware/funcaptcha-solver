@@ -4,6 +4,8 @@ This plugin enables image recognition for Funcaptcha using the cap.guru api. It 
 # Usage
 Simply enter your cap.guru api key in the apiKey variable at the beginning of the foreground.js file and install this plugin in the browser you want to use.
 
+Question text is required for cap guru to identify what is in the image. The question text is being sent, but it only supports the English language. Therefore you should use it in an English language browser.
+
 https://github.com/user-attachments/assets/73a6b1fd-e551-4a24-ac41-556e2e544f1f
 
 # Support Us
