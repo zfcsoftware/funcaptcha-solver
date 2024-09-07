@@ -1,0 +1,28 @@
+{
+    "name": "Funcaptcha Solver",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "all_frames": true,
+            "js": [
+                "./foreground.js"
+            ],
+            "matches": [
+                "*://*/*"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "background"
+    ]
+}
